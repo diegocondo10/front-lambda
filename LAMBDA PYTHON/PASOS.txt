@@ -1,0 +1,30 @@
+Verificar la version de python si o si debe ser la version 3.6
+python -V
+
+si esta instalada la version  3.6
+
+virtualenv venv
+
+ sino usamos el comando directo
+    buscando en la carpeta C:\Users\diego\AppData\Local\Programs\Python\Python36\python.exe
+
+comandos para instalar python 3.6 en linux(ubuntu)
+
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt-get update
+sudo apt-get install python3.6
+
+whereis python <--- nos dice donde es la ubicancion de ese archivo o carpeta
+
+
+
+luego de que creamos el entorno virtual activamos el entorno con:
+venv\Scripts\activate
+
+luego instalamos las dependecias
+pip install requests python-firebase
+
+
+//una ves terminado todo, 
+copiamos nuestro archivo lambda_function.py y nos dirigimos a venv\lib\sites-packages
+pegamos ahi nuestro archivo y lo comprimimos para subir a AWS LAMBDA
